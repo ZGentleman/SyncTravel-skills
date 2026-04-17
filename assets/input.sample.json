@@ -1,0 +1,140 @@
+{
+  "travelers": [
+    {
+      "name": "me",
+      "origin": "Guangzhou",
+      "earliest_departure": "2026-04-16 07:00",
+      "latest_departure": "2026-04-16 14:00",
+      "priority_weight": 1.0,
+      "preferences": {
+        "max_transfers": 1
+      }
+    },
+    {
+      "name": "girlfriend",
+      "origin": "Wuhan",
+      "earliest_departure": "2026-04-16 08:00",
+      "latest_departure": "2026-04-16 15:00",
+      "priority_weight": 1.4,
+      "preferences": {
+        "avoid_transfer": true,
+        "max_transfers": 0
+      }
+    }
+  ],
+  "destination": "Beijing",
+  "date": "2026-04-16",
+  "constraints": {
+    "max_transfers": 2,
+    "max_arrival_time_diff_minutes": 40,
+    "latest_arrival": "2026-04-16 23:30",
+    "must_train_types": [
+      "HSR"
+    ],
+    "accept_standing": false,
+    "allowed_transfer_hubs": [
+      "Wuhan",
+      "Zhengzhou East",
+      "Shijiazhuang"
+    ]
+  },
+  "weights": {
+    "travel_time": 0.25,
+    "price": 0.15,
+    "transfer_penalty": 0.2,
+    "arrival_sync": 0.15,
+    "comfort_penalty": 0.1,
+    "priority_satisfaction": 0.05,
+    "same_train_bonus": 0.1
+  },
+  "candidate_options": {
+    "me": [
+      {
+        "strategy": "same-train",
+        "arrival_time": "2026-04-16 17:30",
+        "total_minutes": 570,
+        "total_price": 862.0,
+        "total_transfers": 0,
+        "train_type": "HSR",
+        "seat_type": "second-class",
+        "shared_train_ratio": 1.0,
+        "legs": [
+          {
+            "train_no": "G80",
+            "dep_station": "Guangzhou South",
+            "arr_station": "Beijing West",
+            "dep_time": "2026-04-16 08:00",
+            "arr_time": "2026-04-16 17:30"
+          }
+        ]
+      },
+      {
+        "strategy": "transfer-merge",
+        "arrival_time": "2026-04-16 18:20",
+        "total_minutes": 590,
+        "total_price": 822.0,
+        "total_transfers": 1,
+        "train_type": "HSR",
+        "seat_type": "second-class",
+        "merge_hub": "Wuhan",
+        "shared_train_ratio": 0.5,
+        "legs": [
+          {
+            "train_no": "G112",
+            "dep_station": "Guangzhou South",
+            "arr_station": "Wuhan",
+            "dep_time": "2026-04-16 08:15",
+            "arr_time": "2026-04-16 12:00"
+          },
+          {
+            "train_no": "G506",
+            "dep_station": "Wuhan",
+            "arr_station": "Beijing West",
+            "dep_time": "2026-04-16 12:30",
+            "arr_time": "2026-04-16 18:20"
+          }
+        ]
+      }
+    ],
+    "girlfriend": [
+      {
+        "strategy": "same-train",
+        "arrival_time": "2026-04-16 17:30",
+        "total_minutes": 320,
+        "total_price": 514.0,
+        "total_transfers": 0,
+        "train_type": "HSR",
+        "seat_type": "second-class",
+        "shared_train_ratio": 1.0,
+        "legs": [
+          {
+            "train_no": "G80",
+            "dep_station": "Wuhan",
+            "arr_station": "Beijing West",
+            "dep_time": "2026-04-16 12:10",
+            "arr_time": "2026-04-16 17:30"
+          }
+        ]
+      },
+      {
+        "strategy": "synchronized-arrival",
+        "arrival_time": "2026-04-16 17:55",
+        "total_minutes": 335,
+        "total_price": 498.0,
+        "total_transfers": 0,
+        "train_type": "HSR",
+        "seat_type": "first-class",
+        "shared_train_ratio": 0.0,
+        "legs": [
+          {
+            "train_no": "G404",
+            "dep_station": "Wuhan",
+            "arr_station": "Beijing West",
+            "dep_time": "2026-04-16 12:20",
+            "arr_time": "2026-04-16 17:55"
+          }
+        ]
+      }
+    ]
+  }
+}

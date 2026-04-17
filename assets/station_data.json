@@ -1,0 +1,845 @@
+{
+  "version": "2.0.0",
+  "updated_at": "2026-04-16",
+  "description": "National HSR station database for Multi-user Trip Planner. Covers 100+ cities with verified station names.",
+  "cities": {
+    "Guangzhou": {
+      "primary_hsr_station": "Guangzhou South",
+      "stations": ["Guangzhou South", "Guangzhou North", "Guangzhou", "Guangzhou East"],
+      "cn_names": ["广州", "广州市"]
+    },
+    "Wuhan": {
+      "primary_hsr_station": "Wuhan",
+      "stations": ["Wuhan", "Wuhan East", "Hankou", "Wuchang"],
+      "cn_names": ["武汉", "武汉市"]
+    },
+    "Beijing": {
+      "primary_hsr_station": "Beijing West",
+      "stations": ["Beijing West", "Beijing South", "Beijing", "Beijing North", "Beijing East", "Beijing Chaoyang"],
+      "cn_names": ["北京", "北京市"]
+    },
+    "Shanghai": {
+      "primary_hsr_station": "Shanghai Hongqiao",
+      "stations": ["Shanghai Hongqiao", "Shanghai", "Shanghai South", "Shanghai West"],
+      "cn_names": ["上海", "上海市"]
+    },
+    "Shenzhen": {
+      "primary_hsr_station": "Shenzhen North",
+      "stations": ["Shenzhen North", "Shenzhen", "Shenzhen East", "Futian", "Shenzhen Pingshan"],
+      "cn_names": ["深圳", "深圳市"]
+    },
+    "Zhengzhou": {
+      "primary_hsr_station": "Zhengzhou East",
+      "stations": ["Zhengzhou East", "Zhengzhou", "Zhengzhou West", "Zhengzhou South"],
+      "cn_names": ["郑州", "郑州市"]
+    },
+    "Changsha": {
+      "primary_hsr_station": "Changsha South",
+      "stations": ["Changsha South", "Changsha", "Changsha West"],
+      "cn_names": ["长沙", "长沙市"]
+    },
+    "Nanjing": {
+      "primary_hsr_station": "Nanjing South",
+      "stations": ["Nanjing South", "Nanjing", "Nanjing East"],
+      "cn_names": ["南京", "南京市"]
+    },
+    "Chengdu": {
+      "primary_hsr_station": "Chengdu East",
+      "stations": ["Chengdu East", "Chengdu", "Chengdu South", "Chengdu West"],
+      "cn_names": ["成都", "成都市"]
+    },
+    "Hangzhou": {
+      "primary_hsr_station": "Hangzhou East",
+      "stations": ["Hangzhou East", "Hangzhou", "Hangzhou South", "Hangzhou West"],
+      "cn_names": ["杭州", "杭州市"]
+    },
+    "Shijiazhuang": {
+      "primary_hsr_station": "Shijiazhuang",
+      "stations": ["Shijiazhuang", "Shijiazhuang East", "Shijiazhuang North"],
+      "cn_names": ["石家庄", "石家庄市"]
+    },
+    "Xi'an": {
+      "primary_hsr_station": "Xi'an North",
+      "stations": ["Xi'an North", "Xi'an", "Xi'an South"],
+      "cn_names": ["西安", "西安市", "西安北"]
+    },
+    "Jinan": {
+      "primary_hsr_station": "Jinan West",
+      "stations": ["Jinan West", "Jinan", "Jinan East"],
+      "cn_names": ["济南", "济南市"]
+    },
+    "Hefei": {
+      "primary_hsr_station": "Hefei South",
+      "stations": ["Hefei South", "Hefei", "Hefei North"],
+      "cn_names": ["合肥", "合肥市"]
+    },
+    "Nanchang": {
+      "primary_hsr_station": "Nanchang West",
+      "stations": ["Nanchang West", "Nanchang", "Nanchang East"],
+      "cn_names": ["南昌", "南昌市"]
+    },
+    "Fuzhou": {
+      "primary_hsr_station": "Fuzhou",
+      "stations": ["Fuzhou", "Fuzhou South", "Fuzhou East"],
+      "cn_names": ["福州", "福州市"]
+    },
+    "Kunming": {
+      "primary_hsr_station": "Kunming South",
+      "stations": ["Kunming South", "Kunming", "Kunming West"],
+      "cn_names": ["昆明", "昆明市"]
+    },
+    "Guiyang": {
+      "primary_hsr_station": "Guiyang North",
+      "stations": ["Guiyang North", "Guiyang", "Guiyang East"],
+      "cn_names": ["贵阳", "贵阳市"]
+    },
+    "Chongqing": {
+      "primary_hsr_station": "Chongqing North",
+      "stations": ["Chongqing North", "Chongqing", "Chongqing West", "Chongqing East"],
+      "cn_names": ["重庆", "重庆市"]
+    },
+    "Tianjin": {
+      "primary_hsr_station": "Tianjin West",
+      "stations": ["Tianjin", "Tianjin West", "Tianjin South", "Tianjin North"],
+      "cn_names": ["天津", "天津市"]
+    },
+    "Suzhou": {
+      "primary_hsr_station": "Suzhou North",
+      "stations": ["Suzhou", "Suzhou North", "Suzhou East"],
+      "cn_names": ["苏州", "苏州市"]
+    },
+    "Qingdao": {
+      "primary_hsr_station": "Qingdao",
+      "stations": ["Qingdao", "Qingdao North", "Qingdao West"],
+      "cn_names": ["青岛", "青岛市"]
+    },
+    "Dalian": {
+      "primary_hsr_station": "Dalian North",
+      "stations": ["Dalian", "Dalian North"],
+      "cn_names": ["大连", "大连市"]
+    },
+    "Shenyang": {
+      "primary_hsr_station": "Shenyang North",
+      "stations": ["Shenyang", "Shenyang North", "Shenyang South"],
+      "cn_names": ["沈阳", "沈阳市"]
+    },
+    "Harbin": {
+      "primary_hsr_station": "Harbin West",
+      "stations": ["Harbin", "Harbin West", "Harbin East", "Harbin North"],
+      "cn_names": ["哈尔滨", "哈尔滨市"]
+    },
+    "Changchun": {
+      "primary_hsr_station": "Changchun West",
+      "stations": ["Changchun", "Changchun West"],
+      "cn_names": ["长春", "长春市"]
+    },
+    "Taiyuan": {
+      "primary_hsr_station": "Taiyuan South",
+      "stations": ["Taiyuan", "Taiyuan South", "Taiyuan North"],
+      "cn_names": ["太原", "太原市"]
+    },
+    "Lanzhou": {
+      "primary_hsr_station": "Lanzhou West",
+      "stations": ["Lanzhou", "Lanzhou West", "Lanzhou East"],
+      "cn_names": ["兰州", "兰州市"]
+    },
+    "Xuzhou": {
+      "primary_hsr_station": "Xuzhou East",
+      "stations": ["Xuzhou", "Xuzhou East"],
+      "cn_names": ["徐州", "徐州市"]
+    },
+    "Wuxi": {
+      "primary_hsr_station": "Wuxi East",
+      "stations": ["Wuxi", "Wuxi East", "Wuxi New Area"],
+      "cn_names": ["无锡", "无锡市"]
+    },
+    "Wenzhou": {
+      "primary_hsr_station": "Wenzhou South",
+      "stations": ["Wenzhou South", "Wenzhou"],
+      "cn_names": ["温州", "温州市"]
+    },
+    "Ningbo": {
+      "primary_hsr_station": "Ningbo",
+      "stations": ["Ningbo", "Ningbo South"],
+      "cn_names": ["宁波", "宁波市"]
+    },
+    "Xiamen": {
+      "primary_hsr_station": "Xiamen North",
+      "stations": ["Xiamen", "Xiamen North"],
+      "cn_names": ["厦门", "厦门市"]
+    },
+    "Nanning": {
+      "primary_hsr_station": "Nanning East",
+      "stations": ["Nanning", "Nanning East", "Nanning West"],
+      "cn_names": ["南宁", "南宁市"]
+    },
+    "Liuzhou": {
+      "primary_hsr_station": "Liuzhou",
+      "stations": ["Liuzhou", "Liuzhou East"],
+      "cn_names": ["柳州", "柳州市"]
+    },
+    "Guilin": {
+      "primary_hsr_station": "Guilin North",
+      "stations": ["Guilin", "Guilin North", "Guilin West"],
+      "cn_names": ["桂林", "桂林市"]
+    },
+    "Changzhou": {
+      "primary_hsr_station": "Changzhou North",
+      "stations": ["Changzhou", "Changzhou North"],
+      "cn_names": ["常州", "常州市"]
+    },
+    "Zhenjiang": {
+      "primary_hsr_station": "Zhenjiang South",
+      "stations": ["Zhenjiang", "Zhenjiang South"],
+      "cn_names": ["镇江", "镇江市"]
+    },
+    "Yangzhou": {
+      "primary_hsr_station": "Yangzhou East",
+      "stations": ["Yangzhou", "Yangzhou East"],
+      "cn_names": ["扬州", "扬州市"]
+    },
+    "Yantai": {
+      "primary_hsr_station": "Yantai",
+      "stations": ["Yantai", "Yantai South"],
+      "cn_names": ["烟台", "烟台市"]
+    },
+    "Weifang": {
+      "primary_hsr_station": "Weifang",
+      "stations": ["Weifang", "Weifang North"],
+      "cn_names": ["潍坊", "潍坊市"]
+    },
+    "Zibo": {
+      "primary_hsr_station": "Zibo North",
+      "stations": ["Zibo", "Zibo North"],
+      "cn_names": ["淄博", "淄博市"]
+    },
+    "Baoding": {
+      "primary_hsr_station": "Baoding East",
+      "stations": ["Baoding", "Baoding East"],
+      "cn_names": ["保定", "保定市"]
+    },
+    "Handan": {
+      "primary_hsr_station": "Handan East",
+      "stations": ["Handan", "Handan East"],
+      "cn_names": ["邯郸", "邯郸市"]
+    },
+    "Luoyang": {
+      "primary_hsr_station": "Luoyang Longmen",
+      "stations": ["Luoyang Longmen", "Luoyang"],
+      "cn_names": ["洛阳", "洛阳市"]
+    },
+    "Kaifeng": {
+      "primary_hsr_station": "Kaifeng North",
+      "stations": ["Kaifeng", "Kaifeng North"],
+      "cn_names": ["开封", "开封市"]
+    },
+    "Xinyang": {
+      "primary_hsr_station": "Xinyang East",
+      "stations": ["Xinyang", "Xinyang East"],
+      "cn_names": ["信阳", "信阳市"]
+    },
+    "Yichang": {
+      "primary_hsr_station": "Yichang East",
+      "stations": ["Yichang East", "Yichang"],
+      "cn_names": ["宜昌", "宜昌市"]
+    },
+    "Xiangyang": {
+      "primary_hsr_station": "Xiangyang East",
+      "stations": ["Xiangyang", "Xiangyang East"],
+      "cn_names": ["襄阳", "襄阳市"]
+    },
+    "Jingzhou": {
+      "primary_hsr_station": "Jingzhou",
+      "stations": ["Jingzhou", "Jingzhou South"],
+      "cn_names": ["荆州", "荆州市"]
+    },
+    "Yueyang": {
+      "primary_hsr_station": "Yueyang East",
+      "stations": ["Yueyang", "Yueyang East"],
+      "cn_names": ["岳阳", "岳阳市"]
+    },
+    "Hengyang": {
+      "primary_hsr_station": "Hengyang East",
+      "stations": ["Hengyang", "Hengyang East"],
+      "cn_names": ["衡阳", "衡阳市"]
+    },
+    "Zhuzhou": {
+      "primary_hsr_station": "Zhuzhou West",
+      "stations": ["Zhuzhou", "Zhuzhou West"],
+      "cn_names": ["株洲", "株洲市"]
+    },
+    "Shaoguan": {
+      "primary_hsr_station": "Shaoguan",
+      "stations": ["Shaoguan", "Shaoguan East"],
+      "cn_names": ["韶关", "韶关市"]
+    },
+    "Huizhou": {
+      "primary_hsr_station": "Huizhou South",
+      "stations": ["Huizhou", "Huizhou South"],
+      "cn_names": ["惠州", "惠州市"]
+    },
+    "Dongguan": {
+      "primary_hsr_station": "Dongguan South",
+      "stations": ["Dongguan", "Dongguan South", "Humen"],
+      "cn_names": ["东莞", "东莞市"]
+    },
+    "Foshan": {
+      "primary_hsr_station": "Foshan West",
+      "stations": ["Foshan", "Foshan West", "Foshan East"],
+      "cn_names": ["佛山", "佛山市"]
+    },
+    "Zhuhai": {
+      "primary_hsr_station": "Zhuhai",
+      "stations": ["Zhuhai", "Zhuhai Gongbei"],
+      "cn_names": ["珠海", "珠海市"]
+    },
+    "Zhongshan": {
+      "primary_hsr_station": "Zhongshan",
+      "stations": ["Zhongshan", "Zhongshan North"],
+      "cn_names": ["中山", "中山市"]
+    },
+    "Mianyang": {
+      "primary_hsr_station": "Mianyang",
+      "stations": ["Mianyang", "Mianyang North"],
+      "cn_names": ["绵阳", "绵阳市"]
+    },
+    "Deyang": {
+      "primary_hsr_station": "Deyang",
+      "stations": ["Deyang", "Deyang North"],
+      "cn_names": ["德阳", "德阳市"]
+    },
+    "Leshan": {
+      "primary_hsr_station": "Leshan",
+      "stations": ["Leshan", "Leshan East"],
+      "cn_names": ["乐山", "乐山市"]
+    },
+    "Meishan": {
+      "primary_hsr_station": "Meishan East",
+      "stations": ["Meishan East"],
+      "cn_names": ["眉山", "眉山市"]
+    },
+    "Yibin": {
+      "primary_hsr_station": "Yibin West",
+      "stations": ["Yibin", "Yibin West"],
+      "cn_names": ["宜宾", "宜宾市"]
+    },
+    "Zunyi": {
+      "primary_hsr_station": "Zunyi",
+      "stations": ["Zunyi", "Zunyi South"],
+      "cn_names": ["遵义", "遵义市"]
+    },
+    "Qujing": {
+      "primary_hsr_station": "Qujing North",
+      "stations": ["Qujing", "Qujing North"],
+      "cn_names": ["曲靖", "曲靖市"]
+    },
+    "Dali": {
+      "primary_hsr_station": "Dali",
+      "stations": ["Dali"],
+      "cn_names": ["大理", "大理市"]
+    },
+    "Lijiang": {
+      "primary_hsr_station": "Lijiang",
+      "stations": ["Lijiang"],
+      "cn_names": ["丽江", "丽江市"]
+    },
+    "Putian": {
+      "primary_hsr_station": "Putian",
+      "stations": ["Putian", "Putian East"],
+      "cn_names": ["莆田", "莆田市"]
+    },
+    "Quanzhou": {
+      "primary_hsr_station": "Quanzhou",
+      "stations": ["Quanzhou", "Quanzhou South"],
+      "cn_names": ["泉州", "泉州市"]
+    },
+    "Zhangzhou": {
+      "primary_hsr_station": "Zhangzhou",
+      "stations": ["Zhangzhou", "Zhangzhou East"],
+      "cn_names": ["漳州", "漳州市"]
+    },
+    "Longyan": {
+      "primary_hsr_station": "Longyan",
+      "stations": ["Longyan", "Longyan South"],
+      "cn_names": ["龙岩", "龙岩市"]
+    },
+    "Sanming": {
+      "primary_hsr_station": "Sanming",
+      "stations": ["Sanming", "Sanming North"],
+      "cn_names": ["三明", "三明市"]
+    },
+    "Nanping": {
+      "primary_hsr_station": "Nanping",
+      "stations": ["Nanping", "Nanping North"],
+      "cn_names": ["南平", "南平市"]
+    },
+    "Jiujiang": {
+      "primary_hsr_station": "Jiujiang",
+      "stations": ["Jiujiang", "Jiujiang South"],
+      "cn_names": ["九江", "九江市"]
+    },
+    "Ganzhou": {
+      "primary_hsr_station": "Ganzhou West",
+      "stations": ["Ganzhou", "Ganzhou West"],
+      "cn_names": ["赣州", "赣州市"]
+    },
+    "Shangrao": {
+      "primary_hsr_station": "Shangrao",
+      "stations": ["Shangrao", "Shangrao East"],
+      "cn_names": ["上饶", "上饶市"]
+    },
+    "Jingdezhen": {
+      "primary_hsr_station": "Jingdezhen North",
+      "stations": ["Jingdezhen North"],
+      "cn_names": ["景德镇", "景德镇市"]
+    },
+    "Yingtan": {
+      "primary_hsr_station": "Yingtan North",
+      "stations": ["Yingtan", "Yingtan North"],
+      "cn_names": ["鹰潭", "鹰潭市"]
+    },
+    "Huangshan": {
+      "primary_hsr_station": "Huangshan North",
+      "stations": ["Huangshan North"],
+      "cn_names": ["黄山", "黄山市"]
+    },
+    "Bengbu": {
+      "primary_hsr_station": "Bengbu South",
+      "stations": ["Bengbu", "Bengbu South"],
+      "cn_names": ["蚌埠", "蚌埠市"]
+    },
+    "Chuzhou": {
+      "primary_hsr_station": "Chuzhou",
+      "stations": ["Chuzhou"],
+      "cn_names": ["滁州", "滁州市"]
+    },
+    "Ma'anshan": {
+      "primary_hsr_station": "Ma'anshan East",
+      "stations": ["Ma'anshan East"],
+      "cn_names": ["马鞍山", "马鞍山市"]
+    },
+    "Wuhu": {
+      "primary_hsr_station": "Wuhu",
+      "stations": ["Wuhu"],
+      "cn_names": ["芜湖", "芜湖市"]
+    },
+    "Anqing": {
+      "primary_hsr_station": "Anqing",
+      "stations": ["Anqing"],
+      "cn_names": ["安庆", "安庆市"]
+    },
+    "Jinhua": {
+      "primary_hsr_station": "Jinhua South",
+      "stations": ["Jinhua", "Jinhua South"],
+      "cn_names": ["金华", "金华市"]
+    },
+    "Shaoxing": {
+      "primary_hsr_station": "Shaoxing North",
+      "stations": ["Shaoxing North"],
+      "cn_names": ["绍兴", "绍兴市"]
+    },
+    "Jiaxing": {
+      "primary_hsr_station": "Jiaxing South",
+      "stations": ["Jiaxing", "Jiaxing South"],
+      "cn_names": ["嘉兴", "嘉兴市"]
+    },
+    "Taizhou": {
+      "primary_hsr_station": "Taizhou",
+      "stations": ["Taizhou", "Taizhou West"],
+      "cn_names": ["台州", "台州市"]
+    },
+    "Lishui": {
+      "primary_hsr_station": "Lishui",
+      "stations": ["Lishui"],
+      "cn_names": ["丽水", "丽水市"]
+    },
+    "Quzhou": {
+      "primary_hsr_station": "Quzhou",
+      "stations": ["Quzhou"],
+      "cn_names": ["衢州", "衢州市"]
+    },
+    "Huaibei": {
+      "primary_hsr_station": "Huaibei",
+      "stations": ["Huaibei"],
+      "cn_names": ["淮北", "淮北市"]
+    },
+    "Suzhou_Anhui": {
+      "primary_hsr_station": "Suzhou East",
+      "stations": ["Suzhou East"],
+      "cn_names": ["宿州", "宿州市"]
+    },
+    "Bozhou": {
+      "primary_hsr_station": "Bozhou South",
+      "stations": ["Bozhou South"],
+      "cn_names": ["亳州", "亳州市"]
+    },
+    "Fuyang": {
+      "primary_hsr_station": "Fuyang West",
+      "stations": ["Fuyang", "Fuyang West"],
+      "cn_names": ["阜阳", "阜阳市"]
+    },
+    "Huainan": {
+      "primary_hsr_station": "Huainan South",
+      "stations": ["Huainan", "Huainan South"],
+      "cn_names": ["淮南", "淮南市"]
+    },
+    "Luan": {
+      "primary_hsr_station": "Lu'an",
+      "stations": ["Lu'an"],
+      "cn_names": ["六安", "六安市"]
+    },
+    "Xuchang": {
+      "primary_hsr_station": "Xuchang East",
+      "stations": ["Xuchang East"],
+      "cn_names": ["许昌", "许昌市"]
+    },
+    "Luohe": {
+      "primary_hsr_station": "Luohe West",
+      "stations": ["Luohe", "Luohe West"],
+      "cn_names": ["漯河", "漯河市"]
+    },
+    "Zhumadian": {
+      "primary_hsr_station": "Zhumadian West",
+      "stations": ["Zhumadian West"],
+      "cn_names": ["驻马店", "驻马店市"]
+    },
+    "Xinxiang": {
+      "primary_hsr_station": "Xinxiang East",
+      "stations": ["Xinxiang", "Xinxiang East"],
+      "cn_names": ["新乡", "新乡市"]
+    },
+    "Anyang": {
+      "primary_hsr_station": "Anyang East",
+      "stations": ["Anyang", "Anyang East"],
+      "cn_names": ["安阳", "安阳市"]
+    },
+    "Jiaozuo": {
+      "primary_hsr_station": "Jiaozuo",
+      "stations": ["Jiaozuo"],
+      "cn_names": ["焦作", "焦作市"]
+    },
+    "Datong": {
+      "primary_hsr_station": "Datong South",
+      "stations": ["Datong", "Datong South"],
+      "cn_names": ["大同", "大同市"]
+    },
+    "Xinzhou": {
+      "primary_hsr_station": "Xinzhou West",
+      "stations": ["Xinzhou West"],
+      "cn_names": ["忻州", "忻州市"]
+    },
+    "Jinzhong": {
+      "primary_hsr_station": "Jinzhong",
+      "stations": ["Jinzhong"],
+      "cn_names": ["晋中", "晋中市"]
+    },
+    "Linfen": {
+      "primary_hsr_station": "Linfen West",
+      "stations": ["Linfen West"],
+      "cn_names": ["临汾", "临汾市"]
+    },
+    "Yuncheng": {
+      "primary_hsr_station": "Yuncheng North",
+      "stations": ["Yuncheng North"],
+      "cn_names": ["运城", "运城市"]
+    },
+    "Baoji": {
+      "primary_hsr_station": "Baoji South",
+      "stations": ["Baoji", "Baoji South"],
+      "cn_names": ["宝鸡", "宝鸡市"]
+    },
+    "Hanzhong": {
+      "primary_hsr_station": "Hanzhong",
+      "stations": ["Hanzhong"],
+      "cn_names": ["汉中", "汉中市"]
+    },
+    "Weinan": {
+      "primary_hsr_station": "Weinan North",
+      "stations": ["Weinan North"],
+      "cn_names": ["渭南", "渭南市"]
+    },
+    "Xianyang": {
+      "primary_hsr_station": "Xianyang",
+      "stations": ["Xianyang"],
+      "cn_names": ["咸阳", "咸阳市"]
+    },
+    "Tianshui": {
+      "primary_hsr_station": "Tianshui South",
+      "stations": ["Tianshui South"],
+      "cn_names": ["天水", "天水市"]
+    },
+    "Wuwei": {
+      "primary_hsr_station": "Wuwei East",
+      "stations": ["Wuwei East"],
+      "cn_names": ["武威", "武威市"]
+    },
+    "Zhangye": {
+      "primary_hsr_station": "Zhangye West",
+      "stations": ["Zhangye West"],
+      "cn_names": ["张掖", "张掖市"]
+    },
+    "Jiayuguan": {
+      "primary_hsr_station": "Jiayuguan South",
+      "stations": ["Jiayuguan South"],
+      "cn_names": ["嘉峪关", "嘉峪关市"]
+    },
+    "Yinchuan": {
+      "primary_hsr_station": "Yinchuan",
+      "stations": ["Yinchuan", "Yinchuan East"],
+      "cn_names": ["银川", "银川市"]
+    },
+    "Zhongwei": {
+      "primary_hsr_station": "Zhongwei",
+      "stations": ["Zhongwei"],
+      "cn_names": ["中卫", "中卫市"]
+    },
+    "Wuhai": {
+      "primary_hsr_station": "Wuhai",
+      "stations": ["Wuhai"],
+      "cn_names": ["乌海", "乌海市"]
+    },
+    "Hohhot": {
+      "primary_hsr_station": "Hohhot East",
+      "stations": ["Hohhot", "Hohhot East"],
+      "cn_names": ["呼和浩特", "呼和浩特市"]
+    },
+    "Baotou": {
+      "primary_hsr_station": "Baotou",
+      "stations": ["Baotou", "Baotou East"],
+      "cn_names": ["包头", "包头市"]
+    },
+    "Urumqi": {
+      "primary_hsr_station": "Urumqi",
+      "stations": ["Urumqi", "Urumqi South"],
+      "cn_names": ["乌鲁木齐", "乌鲁木齐市"]
+    },
+    "Xining": {
+      "primary_hsr_station": "Xining",
+      "stations": ["Xining", "Xining East"],
+      "cn_names": ["西宁", "西宁市"]
+    },
+    "Geermu": {
+      "primary_hsr_station": "Geermu",
+      "stations": ["Geermu"],
+      "cn_names": ["格尔木", "格尔木市"]
+    },
+    "Qinhuangdao": {
+      "primary_hsr_station": "Qinhuangdao",
+      "stations": ["Qinhuangdao", "Qinhuangdao North", "Shanhaiguan"],
+      "cn_names": ["秦皇岛", "秦皇岛市"]
+    },
+    "Tangshan": {
+      "primary_hsr_station": "Tangshan",
+      "stations": ["Tangshan", "Tangshan North"],
+      "cn_names": ["唐山", "唐山市"]
+    },
+    "Langfang": {
+      "primary_hsr_station": "Langfang",
+      "stations": ["Langfang"],
+      "cn_names": ["廊坊", "廊坊市"]
+    },
+    "Cangzhou": {
+      "primary_hsr_station": "Cangzhou West",
+      "stations": ["Cangzhou", "Cangzhou West"],
+      "cn_names": ["沧州", "沧州市"]
+    },
+    "Dezhou": {
+      "primary_hsr_station": "Dezhou East",
+      "stations": ["Dezhou East"],
+      "cn_names": ["德州", "德州市"]
+    },
+    "Liaocheng": {
+      "primary_hsr_station": "Liaocheng West",
+      "stations": ["Liaocheng West"],
+      "cn_names": ["聊城", "聊城市"]
+    },
+    "Jining": {
+      "primary_hsr_station": "Jining North",
+      "stations": ["Jining North", "Jining", "Qufu East"],
+      "cn_names": ["济宁", "济宁市"]
+    },
+    "Tai'an": {
+      "primary_hsr_station": "Tai'an",
+      "stations": ["Tai'an"],
+      "cn_names": ["泰安", "泰安市"]
+    },
+    "Linyi": {
+      "primary_hsr_station": "Linyi North",
+      "stations": ["Linyi North"],
+      "cn_names": ["临沂", "临沂市"]
+    },
+    "Rizhao": {
+      "primary_hsr_station": "Rizhao West",
+      "stations": ["Rizhao West"],
+      "cn_names": ["日照", "日照市"]
+    },
+    "Weihai": {
+      "primary_hsr_station": "Weihai",
+      "stations": ["Weihai", "Weihai North"],
+      "cn_names": ["威海", "威海市"]
+    },
+    "Anshan": {
+      "primary_hsr_station": "Anshan West",
+      "stations": ["Anshan", "Anshan West"],
+      "cn_names": ["鞍山", "鞍山市"]
+    },
+    "Dandong": {
+      "primary_hsr_station": "Dandong",
+      "stations": ["Dandong"],
+      "cn_names": ["丹东", "丹东市"]
+    },
+    "Jinzhou": {
+      "primary_hsr_station": "Jinzhou South",
+      "stations": ["Jinzhou", "Jinzhou South"],
+      "cn_names": ["锦州", "锦州市"]
+    },
+    "Panjin": {
+      "primary_hsr_station": "Panjin North",
+      "stations": ["Panjin North"],
+      "cn_names": ["盘锦", "盘锦市"]
+    },
+    "Yingkou": {
+      "primary_hsr_station": "Yingkou East",
+      "stations": ["Yingkou East"],
+      "cn_names": ["营口", "营口市"]
+    },
+    "Jilin_City": {
+      "primary_hsr_station": "Jilin",
+      "stations": ["Jilin", "Jilin West"],
+      "cn_names": ["吉林", "吉林市"]
+    },
+    "Siping": {
+      "primary_hsr_station": "Siping East",
+      "stations": ["Siping East"],
+      "cn_names": ["四平", "四平市"]
+    },
+    "Songyuan": {
+      "primary_hsr_station": "Songyuan",
+      "stations": ["Songyuan"],
+      "cn_names": ["松原", "松原市"]
+    },
+    "Mudanjiang": {
+      "primary_hsr_station": "Mudanjiang",
+      "stations": ["Mudanjiang"],
+      "cn_names": ["牡丹江", "牡丹江市"]
+    },
+    "Qiqihar": {
+      "primary_hsr_station": "Qiqihar South",
+      "stations": ["Qiqihar", "Qiqihar South"],
+      "cn_names": ["齐齐哈尔", "齐齐哈尔市"]
+    },
+    "Jiamusi": {
+      "primary_hsr_station": "Jiamusi",
+      "stations": ["Jiamusi"],
+      "cn_names": ["佳木斯", "佳木斯市"]
+    },
+    "Lhasa": {
+      "primary_hsr_station": "Lhasa",
+      "stations": ["Lhasa"],
+      "cn_names": ["拉萨", "拉萨市"]
+    },
+    "Shangqiu": {
+      "primary_hsr_station": "Shangqiu",
+      "stations": ["Shangqiu", "Shangqiu South"],
+      "cn_names": ["商丘", "商丘市"]
+    },
+    "Zhoukou": {
+      "primary_hsr_station": "Zhoukou East",
+      "stations": ["Zhoukou East"],
+      "cn_names": ["周口", "周口市"]
+    },
+    "Pingdingshan": {
+      "primary_hsr_station": "Pingdingshan West",
+      "stations": ["Pingdingshan West"],
+      "cn_names": ["平顶山", "平顶山市"]
+    },
+    "Nanyang": {
+      "primary_hsr_station": "Nanyang East",
+      "stations": ["Nanyang East"],
+      "cn_names": ["南阳", "南阳市"]
+    },
+    "Huaian": {
+      "primary_hsr_station": "Huaian East",
+      "stations": ["Huaian East"],
+      "cn_names": ["淮安", "淮安市"]
+    },
+    "Yancheng": {
+      "primary_hsr_station": "Yancheng",
+      "stations": ["Yancheng", "Yancheng North"],
+      "cn_names": ["盐城", "盐城市"]
+    },
+    "Nantong": {
+      "primary_hsr_station": "Nantong",
+      "stations": ["Nantong", "Nantong West"],
+      "cn_names": ["南通", "南通市"]
+    },
+    "Lianyungang": {
+      "primary_hsr_station": "Lianyungang",
+      "stations": ["Lianyungang"],
+      "cn_names": ["连云港", "连云港市"]
+    },
+    "Puyang": {
+      "primary_hsr_station": "Puyang East",
+      "stations": ["Puyang East"],
+      "cn_names": ["濮阳", "濮阳市"]
+    },
+    "Hebi": {
+      "primary_hsr_station": "Hebi East",
+      "stations": ["Hebi East"],
+      "cn_names": ["鹤壁", "鹤壁市"]
+    }
+  },
+  "cross_station_transfer_times": {
+    "Beijing West|Beijing South": 35,
+    "Beijing West|Beijing North": 25,
+    "Beijing South|Beijing": 20,
+    "Shanghai Hongqiao|Shanghai": 40,
+    "Shanghai Hongqiao|Shanghai South": 30,
+    "Guangzhou South|Guangzhou East": 25,
+    "Guangzhou South|Guangzhou": 20,
+    "Wuhan|Hankou": 20,
+    "Wuhan|Wuchang": 25,
+    "Hankou|Wuchang": 30,
+    "Shenzhen North|Shenzhen": 30,
+    "Shenzhen North|Futian": 15,
+    "Chengdu East|Chengdu": 25,
+    "Zhengzhou East|Zhengzhou": 20,
+    "Nanjing South|Nanjing": 25,
+    "Hangzhou East|Hangzhou": 20,
+    "Changsha South|Changsha": 20,
+    "Chongqing North|Chongqing": 25,
+    "Xi'an North|Xi'an": 30,
+    "Tianjin West|Tianjin": 20,
+    "Shenyang North|Shenyang": 20,
+    "Harbin West|Harbin": 25,
+    "Jinan West|Jinan": 25,
+    "Hefei South|Hefei": 20,
+    "Nanchang West|Nanchang": 20,
+    "Kunming South|Kunming": 25,
+    "Guiyang North|Guiyang": 20,
+    "Fuzhou|Fuzhou South": 20,
+    "Qingdao|Qingdao North": 25,
+    "Dalian North|Dalian": 25,
+    "Changchun West|Changchun": 20,
+    "Taiyuan South|Taiyuan": 20,
+    "Lanzhou West|Lanzhou": 20,
+    "Xuzhou East|Xuzhou": 20,
+    "Wuxi East|Wuxi": 15,
+    "Suzhou North|Suzhou": 15,
+    "Ningbo|Ningbo South": 15,
+    "Xiamen|Xiamen North": 25,
+    "Nanning East|Nanning": 20,
+    "Guilin North|Guilin": 15,
+    "Luoyang Longmen|Luoyang": 20,
+    "Hohhot East|Hohhot": 20,
+    "Baotou East|Baotou": 15,
+    "Yinchuan East|Yinchuan": 15,
+    "Xining East|Xining": 15,
+    "Cangzhou West|Cangzhou": 15,
+    "Dezhou East|Dezhou": 15,
+    "Qinhuangdao|Shanhaiguan": 20,
+    "Jining North|Qufu East": 25,
+    "Anshan West|Anshan": 15,
+    "Jinzhou South|Jinzhou": 20
+  }
+}
