@@ -1,4 +1,4 @@
-# SyncTravel skills
+# SyncTravel Skills 🚄
 
 **多人异地出发，同一目的地汇合 —— 高铁协同出行规划引擎**
 
