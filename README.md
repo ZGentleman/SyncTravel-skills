@@ -199,29 +199,28 @@ AI: Presents results in natural language, asks follow-up questions
 
 ```
 SyncTravel/
-├── .cursor/skills/multi-user-trip-planner/
-│   ├── SKILL.md                    # Agent Skill entry point
-│   ├── scripts/
-│   │   ├── mcp_server.py           # MCP server (8 tools)
-│   │   ├── plan_trips.py           # Core planning engine
-│   │   ├── provider_layer.py       # Data acquisition + strategy orchestration
-│   │   ├── strategy_generator.py   # 5 strategy algorithms
-│   │   ├── railway_api.py          # 12306 / Ctrip adapters
-│   │   ├── models.py               # Pydantic data models
-│   │   ├── utils.py                # Payload builders, NL parser, formatters
-│   │   ├── station_repository.py   # City-station mapping
-│   │   ├── route_analyzer.py       # Route validation & analysis
-│   │   └── service_api.py          # REST API (FastAPI)
-│   ├── assets/
-│   │   └── station_data.json       # 157+ city HSR station database
-│   └── references/
-│       ├── architecture.md         # Architecture deep-dive
-│       ├── api-reference.md        # API reference
-│       └── strategies.md           # Strategy semantics & scoring
-├── examples/
-│   ├── quick_start.py              # Getting started example
-│   └── quick_start.json            # Sample input
-└── requirements.txt
+├── scripts/
+│   ├── mcp_server.py           # MCP服务器（8个工具）
+│   ├── plan_trips.py           # 核心规划引擎
+│   ├── provider_layer.py       # 数据获取 + 策略编排
+│   ├── strategy_generator.py   # 5种策略算法
+│   ├── railway_api.py          # 12306 / 携程适配器
+│   ├── models.py               # Pydantic 数据模型
+│   ├── utils.py                # 载荷构建、自然语言解析、格式化
+│   ├── station_repository.py   # 城市-站点映射
+│   ├── route_analyzer.py       # 路线验证与分析
+│   └── service_api.py          # REST API（FastAPI）
+├── assets/
+│   ├── station_data.json       # 157+城市高铁站数据库
+│   └── input.sample.json       # 示例输入
+├── references/
+│   ├── architecture.md         # 架构详解
+│   ├── api-reference.md        # API参考
+│   └── strategies.md           # 策略语义与评分
+├── SKILL.md                    # Agent Skill 入口
+├── README.md                   # 英文文档
+├── README.zh-CN.md             # 中文文档
+└── requirements.txt            # 依赖列表
 ```
 
 ## Performance
