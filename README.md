@@ -1,4 +1,4 @@
-# SyncTravel 🚄
+# SyncTravel skills
 
 **Multi-origin synchronized trip planner for China's high-speed rail**
 
