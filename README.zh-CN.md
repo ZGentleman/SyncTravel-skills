@@ -108,6 +108,18 @@ curl -X POST http://localhost:8000/plan/quick \
 
 ## 💡 使用示例
 
+### 演示效果
+
+<p align="center">
+  <img src="https://github.com/ZGentleman/blog-images/blob/main/test1.png?raw=true" width="80%" alt="SyncTravel Demo 1">
+</p>
+<p align="center">
+  <img src="https://github.com/ZGentleman/blog-images/blob/main/test2.png?raw=true" width="80%" alt="SyncTravel Demo 2">
+</p>
+<p align="center">
+  <img src="https://github.com/ZGentleman/blog-images/blob/main/test3.png?raw=true" width="80%" alt="SyncTravel Demo 3">
+</p>
+
 ### 示例输出（真实12306数据）
 
 | 排名 | 策略 | 到达时间差 | 总价 | 说明 |

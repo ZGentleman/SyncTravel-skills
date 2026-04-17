@@ -31,6 +31,16 @@ result = plan_trip_data(payload, topk=3)
 
 **Output (live 12306 data):**
 
+<p align="center">
+  <img src="https://github.com/ZGentleman/blog-images/blob/main/test1.png?raw=true" width="80%" alt="SyncTravel Demo 1">
+</p>
+<p align="center">
+  <img src="https://github.com/ZGentleman/blog-images/blob/main/test2.png?raw=true" width="80%" alt="SyncTravel Demo 2">
+</p>
+<p align="center">
+  <img src="https://github.com/ZGentleman/blog-images/blob/main/test3.png?raw=true" width="80%" alt="SyncTravel Demo 3">
+</p>
+
 | # | Strategy | Arrival Gap | Total Cost | Details |
 |---|----------|-------------|------------|---------|
 | 1 | Same Train | 0 min | ¥830 | Both on G302 — board at Guangzhou/Wuhan, arrive Beijing West |
